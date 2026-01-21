@@ -289,7 +289,7 @@ const translations = {
         company: 'Karken Company, UAB',
         address: 'Vilnius, Lietuva',
         phone: '+370 609 09398',
-        email: 'uabkarkencompany@gmail.com',
+        email: ' hello@karkencompany.lt',
         hours: 'Darbo laikas: I-V 9:00 - 18:00',
       },
       reasons: {
@@ -568,7 +568,7 @@ const translations = {
         company: 'Karken Company, UAB',
         address: 'Vilnius, Lithuania',
         phone: '+370 609 09398',
-        email: 'uabkarkencompany@gmail.com',
+        email: ' hello@karkencompany.lt',
         hours: 'Business Hours: Mon-Fri 9:00 - 18:00',
       },
       reasons: {
