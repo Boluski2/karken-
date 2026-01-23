@@ -215,52 +215,53 @@ const Services: React.FC = () => {
 
       {/* Ideal For Section */}
       <section className="section-padding bg-background">
-        <div className="container-wide">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-            <div>
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-8">
-                {t('services.idealFor.title')}
-              </h2>
-              <ul className="space-y-4 mb-8">
-                {idealForItems.map((item, index) => (
-                  <li key={index} className="flex items-start space-x-3">
-                    <CheckCircle className="w-6 h-6 text-primary flex-shrink-0 mt-0.5" />
-                    <span className="text-foreground">{item}</span>
-                  </li>
-                ))}
-              </ul>
-              <div className="bg-muted p-6 rounded-lg border-l-4 border-primary">
-                <p className="text-lg text-foreground">
-                  {t('services.cta')}
-                </p>
-                <div className="flex flex-wrap gap-4 mt-6">
-                  <a 
-                    href={`mailto:${language === 'lt' ? 'hello@karkencompany.lt' : 'hello@karkencompany.lt'}`}
-                    className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg hover:bg-primary/90 transition-colors"
-                  >
-                    <Mail className="w-5 h-5" />
-                    {t('contact.form.catalog')}
-                  </a>
-                  <a 
-                    href={`mailto:${language === 'lt' ? 'hello@karkencompany.lt' : 'hello@karkencompany.lt'}?subject=${language === 'lt' ? 'Konsultacija' : 'Consultation'}`}
-                    className="inline-flex items-center gap-2 border-2 border-primary text-primary px-6 py-3 rounded-lg hover:bg-primary/5 transition-colors"
-                  >
-                    <FileText className="w-5 h-5" />
-                    {t('contact.form.consultation')}
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div>
-              <OptimizedImage
-                src={retailImage }
-                alt={t('services.idealFor.title') as string}
-                className="w-full h-[500px] object-cover rounded-lg shadow-2xl"
-              />
-            </div>
+  <div className="container-wide">
+    <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+      <div>
+        <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-8">
+          {t('services.idealFor.title')}
+        </h2>
+        <ul className="space-y-4 mb-8">
+          {idealForItems.map((item, index) => (
+            <li key={index} className="flex items-start space-x-3">
+              <CheckCircle className="w-6 h-6 text-primary flex-shrink-0 mt-0.5" />
+              <span className="text-foreground">{item}</span>
+            </li>
+          ))}
+        </ul>
+        <div className="bg-muted p-6 rounded-lg border-l-4 border-primary">
+          <p className="text-lg text-foreground">
+            {t('services.cta')}
+          </p>
+          <div className="flex flex-wrap gap-4 mt-6">
+            {/* Link to Contact page instead of email */}
+            <a 
+              href="/contact"
+              className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg hover:bg-primary/90 transition-colors"
+            >
+              <Mail className="w-5 h-5" />
+              {t('contact.form.catalog')}
+            </a>
+            <a 
+              href="/contact"
+              className="inline-flex items-center gap-2 border-2 border-primary text-primary px-6 py-3 rounded-lg hover:bg-primary/5 transition-colors"
+            >
+              <FileText className="w-5 h-5" />
+              {t('contact.form.consultation')}
+            </a>
           </div>
         </div>
-      </section>
+      </div>
+      <div>
+        <OptimizedImage
+          src={retailImage}
+          alt={t('services.idealFor.title') as string}
+          className="w-full h-[500px] object-cover rounded-lg shadow-2xl"
+        />
+      </div>
+    </div>
+  </div>
+</section>
     </Layout>
   );
 };
