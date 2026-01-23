@@ -3,10 +3,11 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import Layout from '@/components/Layout';
 import SEO from '@/components/SEO';
 import OptimizedImage from '@/components/OptimizedImage';
-import heroImage from '@/assets/hero-nigerian-food.jpg';
+import heroImage from '@/assets/ikhsan-baihaqi-pbc2wXbQYpI-unsplash.jpg';
 import spicesImage from '@/assets/spices-flatlay.jpg';
-import cookingImage from '@/assets/african-cooking.jpg';
-import marketImage from '@/assets/african-market.jpg';
+import cookingImage from '@/assets/Drink.png';
+import marketImage from '@/assets/grains.png';
+import { Shield } from 'lucide-react';
 
 const Products: React.FC = () => {
   const { t, language } = useLanguage();
@@ -139,6 +140,22 @@ const Products: React.FC = () => {
           </div>
         </section>
       ))}
+
+         {/* Compliance Note */}
+      <section className="section-padding bg-background">
+        <div className="container-wide">
+          <div className="max-w-4xl mx-auto bg-muted p-8 rounded-xl border-l-4 border-primary">
+            <div className="flex items-start space-x-4">
+              <Shield className="w-8 h-8 text-primary flex-shrink-0 mt-1" />
+              <div>
+                <p className="text-lg text-foreground">
+                  {t('products.note')}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </Layout>
   );
 };

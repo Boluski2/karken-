@@ -4,7 +4,7 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import { Menu, X, Globe } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useState } from 'react';
-import karkenLogo from '@/assets/karken-logo.png';
+import karkenLogo from '@/assets/KarkenLogo_page.jpg';
 
 const Header: React.FC = () => {
   const { t, language, setLanguage } = useLanguage();

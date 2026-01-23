@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { MapPin, Phone, Mail } from 'lucide-react';
-import karkenLogo from '@/assets/karken-logo.png';
+import karkenLogo from '@/assets/KarkenLogo_page.jpg';
 
 const Footer: React.FC = () => {
   const { t } = useLanguage();
@@ -58,22 +58,30 @@ const Footer: React.FC = () => {
               <li className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
                 <span className="text-background/70 text-sm">
-                  {t('contact.info.address')}
+                  Smolensko g. 10-95, Vilnius, LT-04312
                 </span>
               </li>
               <li className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-primary flex-shrink-0" />
                 <span className="text-background/70 text-sm">
-                  {t('contact.info.phone')}
+                  +370 609 09398
                 </span>
               </li>
               <li className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-primary flex-shrink-0" />
                 <span className="text-background/70 text-sm">
-                  {t('contact.info.email')}
+                  hello@karkencompany.lt
                 </span>
               </li>
             </ul>
+            <div className="mt-6 pt-4 border-t border-background/10">
+              <p className="text-background/60 text-xs">
+                {t('contact.info.regNumber')}
+              </p>
+              <p className="text-background/60 text-xs">
+                {t('contact.info.vatNote')}
+              </p>
+            </div>
           </div>
 
           {/* Legal */}
@@ -83,19 +91,19 @@ const Footer: React.FC = () => {
             </h4>
             <ul className="space-y-3">
               <li>
-                <a href="#" className="text-background/70 text-sm hover:text-background transition-colors">
+                <Link to="/privacy-policy" className="text-background/70 text-sm hover:text-background transition-colors">
                   {t('footer.privacy')}
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-background/70 text-sm hover:text-background transition-colors">
+                <Link to="/terms-of-service" className="text-background/70 text-sm hover:text-background transition-colors">
                   {t('footer.terms')}
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-background/70 text-sm hover:text-background transition-colors">
+                <Link to="/cookie-policy" className="text-background/70 text-sm hover:text-background transition-colors">
                   {t('footer.cookies')}
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -104,7 +112,7 @@ const Footer: React.FC = () => {
         {/* Copyright */}
         <div className="mt-16 pt-8 border-t border-background/10">
           <p className="text-center text-background/50 text-sm">
-            {t('footer.copyright')}
+            {t('footer.copyright').replace('{year}', new Date().getFullYear())}
           </p>
         </div>
       </div>
