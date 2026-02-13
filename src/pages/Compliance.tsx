@@ -4,8 +4,8 @@ import Layout from '@/components/Layout';
 import SEO from '@/components/SEO';
 import OptimizedImage from '@/components/OptimizedImage';
 import { Shield, CheckCircle, FileCheck, Search } from 'lucide-react';
-import qualityImage from '@/assets/quality-control.jpg';
-import warehouseImage from '@/assets/warehouse.jpg';
+import qualityImage from '@/assets/food-quality-lab.jpg';
+import warehouseImage from '@/assets/food-warehouse.jpg';
 
 const Compliance: React.FC = () => {
   const { t, language } = useLanguage();

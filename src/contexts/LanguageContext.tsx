@@ -60,7 +60,7 @@ const translations = {
     },
     hero: {
       headline: 'Kur Afrikos paveldas susitinka su Baltijos galimybėmis',
-      subheadline: 'Mes atvežame autentiškus Afrikos skonius į Lietuvą  ne tik kaip prekes, bet kaip tiltus tarp kultūrų. Veikdami iš savo sandėlio Vilniuje, Karken Company rašome naują Lietuvos kulinarinės istorijos skyrių: tokį, kuris garbina tradicijas, priima įvairovę ir atsako į kintančios visuomenės poreikius.',
+      subheadline: 'Mes atvežame autentiškus Afrikos skonius į Lietuvą – ne tik kaip prekes, bet kaip tiltus tarp kultūrų. Veikdami iš savo sandėlio Vilniuje, Karken Company rašome naują Lietuvos kulinarinės istorijos skyrių: tokį, kuris garbina tradicijas, priima įvairovę ir atsako į kintančios visuomenės poreikius.',
       cta: 'Tapkite partneriu',
       ctaSecondary: 'Susisiekite',
     },
@@ -76,7 +76,7 @@ const translations = {
       enrichment: 'Mes nesiekime pakeisti Lietuvos turtingos maisto kultūros – mes norime ją praturtinti drąsiais, įvairiais Afrikos skoniais, pristatytomis su visišku atitikimu, skaidrumu ir rūpestingu požiūriu.',
       mission: {
         title: 'Mūsų misija',
-        text: 'Tapti patikimiausiu ir atsakingiausiu autentiškų afrikietiškų maisto produktų platintoju Baltijos šalyse  tiekiant atitinkančius reglamentams, aukštos kokybės ir kultūriškai reikšmingus produktus, kurie stiprina bendruomenes, remia mažmenininkus ir praturtina Lietuvos maisto ekosistemą.',
+        text: 'Tapti patikimiausiu ir atsakingiausiu autentiškų afrikietiškų maisto produktų platintoju Baltijos šalyse – tiekiant atitinkančius reglamentams, aukštos kokybės ir kultūriškai reikšmingus produktus, kurie stiprina bendruomenes, remia mažmenininkus ir praturtina Lietuvos maisto ekosistemą.',
       },
       aims: {
         title: 'Mūsų pagrindiniai tikslai',
@@ -107,9 +107,28 @@ const translations = {
       },
       story: {
         title: 'Mūsų istorija',
-        p1: 'Karken Company gimė iš paprastos, bet galingos įžvalgos: kai žmonės migruoja, jų maisto kultūra keliauja kartu su jais. Tačiau dažnai jų mėgstami produktai  atsitiktiniai pagrindiniai produktai, kurie primena namus  lieka nerandami naujose parduotuvėse.',
+        p1: 'Karken Company gimė iš paprastos, bet galingos įžvalgos: kai žmonės migruoja, jų maisto kultūra keliauja kartu su jais. Tačiau dažnai jų mėgstami produktai – atsitiktiniai pagrindiniai produktai, kurie primena namus – lieka nerandami naujose parduotuvėse.',
         p2: 'Mūsų įkūrėjai, turintys ryšių tiek su Lietuvos, tiek su Afrikos kultūromis, pamatė galimybę kurti verslą, kuris būtų daugiau nei tik pelno siekiantis: verslą, pagrįstą tikslumu, pasitikėjimu ir kultūriniu jautrumu.',
         p3: 'Šiandien mes kuriame partnerystes su mažmenininkais, kurie supranta besikeičiančią Lietuvos demografiją ir nori būti priekyje aptarnaujant įvairias bendruomenes.',
+      },
+      businessModel: {
+        title: 'Mūsų verslo modelis',
+        subtitle: 'Profesionalus B2B platinimas per tris kanalus',
+        intro: 'Karken Company veikia išskirtinai kaip didmeninės prekybos platintojas, aptarnaudamas:',
+        channels: [
+          {
+            title: 'Tautinių ir afrikietiškų maisto prekių parduotuvės',
+            text: 'Teikiame nuoseklų, konkurencingai kainuojantį tiekimą kultūriškai esminių prekių – užtikrindami, kad diasporos bendruomenės galėtų gauti produktus, būtinus jų kasdieniam gyvenimui, šventėms ir religinėms praktikoms.',
+          },
+          {
+            title: 'Pagrindiniai mažmeninės prekybos partneriai',
+            text: 'Padedame bendrosioms parduotuvėms plėsti „Pasaulio maisto" ar „Tarptautinių specialybių" kategorijas su sparčiai parduodamais afrikietiškais produktais, kurie didina lankytojų srautus, krepšelio vertę ir klientų lojalumą.',
+          },
+          {
+            title: 'Institucinės ir HORECA įstaigos',
+            text: 'Leidžiame universitetams, korporacinėms stovykloms, kateringų paslaugoms ir viešbučiams atitikti įvairialypės klientijos maisto lūkesčius.',
+          },
+        ],
       },
       values: {
         title: 'Mūsų vertybės',
@@ -118,7 +137,7 @@ const translations = {
         reliability: 'Patikimumas',
         reliabilityText: 'Mūsų partneriai gali pasikliauti stabiliu tiekimu, tiksliais terminais ir nuosekliu bendravimu.',
         transparency: 'Skaidrumas',
-        transparencyText: 'Aiški komunikacija, dokumentacija ir kainodara  be paslėptų siurprizų.',
+        transparencyText: 'Aiški komunikacija, dokumentacija ir kainodara – be paslėptų siurprizų.',
         partnership: 'Partnerystė',
         partnershipText: 'Kuriame ilgalaikius, abipusiai naudingus santykius su mūsų partneriais.',
       },
@@ -136,7 +155,7 @@ const translations = {
     marketDemand: {
       title: 'Rinkos paklausa',
       subtitle: 'Auganti rinka',
-      p1: 'Lietuvoje gyvena vis daugiau įvairių kultūrų atstovų  žmonių iš Afrikos, Azijos ir kitų regionų, kurie prisideda prie šalies ekonomikos ir kultūrinio gyvenimo.',
+      p1: 'Lietuvoje gyvena vis daugiau įvairių kultūrų atstovų – žmonių iš Afrikos, Azijos ir kitų regionų, kurie prisideda prie šalies ekonomikos ir kultūrinio gyvenimo.',
       p2: 'Afrikietiški maisto produktai tampa vis populiaresni tiek diasporos bendruomenėse, tiek tarp vietinių gyventojų, ieškančių naujų skonių.',
       p3: 'Karken Company užpildo tarpą tarp paklausos ir pasiūlos, tiekdama autentiškus, kokybiškus ir ES standartus atitinkančius produktus.',
     },
@@ -196,7 +215,7 @@ const translations = {
     products: {
       title: 'Produktai ir asortimentas',
       subtitle: 'Autentiški. Atitinkantys reglamentams. Paruošti mažmeninei prekybai.',
-      intro: 'Specializuojamės sparčiai parduodamuose afrikietiškuose maisto esminiuose produktuose, kurie jau įrodė savo vertę tiek Afrikos namų ūkiuose, tiek Europos diasporos rinkose. Mūsų pasirinkimą lemia kultūrinė reikšmė, prekės ženklo atpažįstamumas ir komercinė perspektyva  o ne laikinos tendencijos.',
+      intro: 'Specializuojamės sparčiai parduodamuose afrikietiškuose maisto esminiuose produktuose, kurie jau įrodė savo vertę tiek Afrikos namų ūkiuose, tiek Europos diasporos rinkose. Mūsų pasirinkimą lemia kultūrinė reikšmė, prekės ženklo atpažįstamumas ir komercinė perspektyva – o ne laikinos tendencijos.',
       categories: {
         grains: {
           title: 'Greitai paruošiami makaronai ir patiekalai',
@@ -272,7 +291,7 @@ const translations = {
       },
       shipping: {
         title: 'Tarptautinis gabenimas',
-        p1: 'Lankstūs pristatymo variantai  nuo pilnų krovinių iki mažų siuntų.',
+        p1: 'Lankstūs pristatymo variantai – nuo pilnų krovinių iki mažų siuntų.',
         p2: 'Reguliarūs pristatymai pagal jūsų poreikius.',
       },
       flexibility: {
@@ -286,7 +305,7 @@ const translations = {
       },
       scalability: {
         title: 'Pritaikomas mastelis',
-        text: 'Nesvarbu, ar esate maža parduotuvė, ar didelis prekybos tinklas  galime prisitaikyti prie jūsų poreikių ir augti kartu.',
+        text: 'Nesvarbu, ar esate maža parduotuvė, ar didelis prekybos tinklas – galime prisitaikyti prie jūsų poreikių ir augti kartu.',
       },
       partnership: {
         title: 'Partnerystė',
@@ -313,7 +332,7 @@ const translations = {
       info: {
         company: 'Karken Company, UAB',
         address: 'Smolensko g. 10-95, Vilnius, LT-04312',
-        phone: '+370 609 09398',
+        phone: '+370 604 87253',
         email: 'hello@karkencompany.lt',
         regNumber: 'Įmonės kodas: 307213203',
         vatNote: 'PVM registracija vykdoma',
@@ -328,7 +347,7 @@ const translations = {
       privacy: 'Privatumo politika',
       terms: 'Naudojimo sąlygos',
       cookies: 'Slapukų politika',
-      copyright: '© {year} Karken Company, UAB. Visos teisės saugomos.',
+      copyright: '© 2026 Karken Company, UAB. Visos teisės saugomos.',
     },
     cta: {
       title: 'Kurkime įtraukiamą maisto ateitį kartu',
@@ -466,7 +485,7 @@ const translations = {
     },
     hero: {
       headline: 'Where African Heritage Meets Baltic Opportunity',
-      subheadline: 'We bring the authentic tastes of Africa to Lithuania not just as products, but as bridges between cultures. Operating from our warehouse in Vilnius, Karken Company is building a new chapter in Lithuania\'s culinary story: one that honours tradition, embraces diversity, and meets the real needs of a changing society.',
+      subheadline: 'We bring the authentic tastes of Africa to Lithuania—not just as products, but as bridges between cultures. Operating from our warehouse in Vilnius, Karken Company is building a new chapter in Lithuania\'s culinary story: one that honours tradition, embraces diversity, and meets the real needs of a changing society.',
       cta: 'Partner With Us',
       ctaSecondary: 'Contact Us',
     },
@@ -482,7 +501,7 @@ const translations = {
       enrichment: 'We do not seek to replace Lithuania\'s rich food culture—but to enrich it with the bold, diverse flavours of Africa, delivered with full compliance, transparency, and care.',
       mission: {
         title: 'Our Mission',
-        text: 'To become the most trusted and responsive distributor of authentic African food products in the Baltics delivering compliant, high-quality, and culturally significant goods that empower communities, support retailers, and enrich Lithuania\'s food ecosystem.',
+        text: 'To become the most trusted and responsive distributor of authentic African food products in the Baltics—delivering compliant, high-quality, and culturally significant goods that empower communities, support retailers, and enrich Lithuania\'s food ecosystem.',
       },
       aims: {
         title: 'Our Core Aims',
@@ -513,9 +532,28 @@ const translations = {
       },
       story: {
         title: 'Our Story',
-        p1: 'Karken Company was born from a simple but powerful insight: when people migrate, their food culture travels with them. Yet often, their beloved products the casual staples that taste like home remain missing from new shelves.',
+        p1: 'Karken Company was born from a simple but powerful insight: when people migrate, their food culture travels with them. Yet often, their beloved products—the casual staples that taste like home—remain missing from new shelves.',
         p2: 'Our founders, with ties to both Lithuanian and African cultures, saw an opportunity to build a business that is more than profit-seeking: one based on precision, trust, and cultural sensitivity.',
         p3: 'Today, we are building partnerships with retailers who understand Lithuania\'s changing demographics and want to be at the forefront of serving diverse communities.',
+      },
+      businessModel: {
+        title: 'Our Business Model',
+        subtitle: 'Professional B2B Distribution Across Three Channels',
+        intro: 'Karken Company operates exclusively as a wholesale distributor, serving:',
+        channels: [
+          {
+            title: 'Ethnic & African Grocery Retailers',
+            text: 'We provide consistent, competitively priced supply of culturally essential goods—ensuring diaspora communities can access the foods central to their daily life, celebrations, and religious practices.',
+          },
+          {
+            title: 'Mainstream Retail Partners',
+            text: 'We support general grocery operators in expanding their "World Foods" or "International Specialties" categories with high-turnover African products that drive foot traffic, basket size, and customer loyalty.',
+          },
+          {
+            title: 'Institutional & HORECA Clients',
+            text: 'We enable universities, corporate campuses, catering services, and hospitality venues to meet the dietary expectations of an increasingly diverse clientele.',
+          },
+        ],
       },
       values: {
         title: 'Our Values',
@@ -524,7 +562,7 @@ const translations = {
         reliability: 'Reliability',
         reliabilityText: 'Our partners can count on stable supply, accurate timelines, and consistent communication.',
         transparency: 'Transparency',
-        transparencyText: 'Clear communication, documentation, and pricing no hidden surprises.',
+        transparencyText: 'Clear communication, documentation, and pricing—no hidden surprises.',
         partnership: 'Partnership',
         partnershipText: 'We build long-term, mutually beneficial relationships with our partners.',
       },
@@ -542,7 +580,7 @@ const translations = {
     marketDemand: {
       title: 'Market Demand',
       subtitle: 'A Growing Market',
-      p1: 'Lithuania is home to an increasingly diverse population people from Africa, Asia, and other regions who contribute to the country\'s economy and cultural life.',
+      p1: 'Lithuania is home to an increasingly diverse population—people from Africa, Asia, and other regions who contribute to the country\'s economy and cultural life.',
       p2: 'African food products are becoming increasingly popular both in diaspora communities and among local residents seeking new flavours.',
       p3: 'Karken Company bridges the gap between demand and supply, delivering authentic, high-quality products that meet EU standards.',
     },
@@ -602,7 +640,7 @@ const translations = {
     products: {
       title: 'Products & Portfolio',
       subtitle: 'Authentic. Compliant. Retail-Ready.',
-      intro: 'We specialise in fast-moving African grocery essentials that have already proven their value in households across the continent and in European diaspora markets. Our selection is driven by cultural significance, brand recognition, and commercial viability not passing trends.',
+      intro: 'We specialise in fast-moving African grocery essentials that have already proven their value in households across the continent and in European diaspora markets. Our selection is driven by cultural significance, brand recognition, and commercial viability—not passing trends.',
       categories: {
         grains: {
           title: 'Instant noodles & quick-prep meals',
@@ -678,7 +716,7 @@ const translations = {
       },
       shipping: {
         title: 'International Shipping',
-        p1: 'Flexible delivery options from full loads to small shipments.',
+        p1: 'Flexible delivery options—from full loads to small shipments.',
         p2: 'Regular deliveries according to your needs.',
       },
       flexibility: {
@@ -692,7 +730,7 @@ const translations = {
       },
       scalability: {
         title: 'Scalable Operations',
-        text: 'Whether you\'re a small store or a large retail chain we can adapt to your needs and grow with you.',
+        text: 'Whether you\'re a small store or a large retail chain—we can adapt to your needs and grow with you.',
       },
       partnership: {
         title: 'Partnership',
@@ -719,7 +757,7 @@ const translations = {
       info: {
         company: 'Karken Company, UAB',
         address: 'Smolensko g. 10-95, Vilnius, LT-04312',
-        phone: '+370 609 09398',
+        phone: '+370 604 87253',
         email: 'hello@karkencompany.lt',
         regNumber: 'Company Code: 307213203',
         vatNote: 'VAT registration pending',
@@ -734,7 +772,7 @@ const translations = {
       privacy: 'Privacy Policy',
       terms: 'Terms of Service',
       cookies: 'Cookie Policy',
-      copyright: '© {year} Karken Company, UAB. All rights reserved.',
+      copyright: '© 2026 Karken Company, UAB. All rights reserved.',
     },
     cta: {
       title: 'Let\'s Build an Inclusive Food Future Together',

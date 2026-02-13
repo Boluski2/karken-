@@ -3,9 +3,10 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import Layout from '@/components/Layout';
 import SEO from '@/components/SEO';
 import OptimizedImage from '@/components/OptimizedImage';
+import ScrollReveal from '@/components/ScrollReveal';
 import { Ship, Truck, Package, Handshake, CheckCircle } from 'lucide-react';
-import shippingImage from '@/assets/shipping-port.jpg';
-import warehouseImage from '@/assets/warehouse.jpg';
+import shippingImage from '@/assets/shipping-logistics.jpg';
+import warehouseImage from '@/assets/food-warehouse.jpg';
 
 const Logistics: React.FC = () => {
   const { t, language } = useLanguage();
@@ -91,11 +92,12 @@ const Logistics: React.FC = () => {
               </p>
             </div>
             <div>
-              <OptimizedImage
-                src={shippingImage}
-                alt="International shipping services"
-                className="w-full h-[400px] object-cover rounded-lg shadow-2xl"
-              />
+               <OptimizedImage
+                 src={shippingImage}
+                 alt="International shipping services"
+                 className="w-full h-[400px] object-cover rounded-lg shadow-2xl"
+                 loading="lazy"
+               />
             </div>
           </div>
         </div>
@@ -144,11 +146,12 @@ const Logistics: React.FC = () => {
               </p>
             </div>
             <div className="lg:order-1">
-              <OptimizedImage
-                src={warehouseImage}
-                alt="Scalable warehouse operations"
-                className="w-full h-[400px] object-cover rounded-lg shadow-2xl"
-              />
+               <OptimizedImage
+                 src={warehouseImage}
+                 alt="Scalable warehouse operations"
+                 className="w-full h-[400px] object-cover rounded-lg shadow-2xl"
+                 loading="lazy"
+               />
             </div>
           </div>
         </div>

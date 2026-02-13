@@ -3,7 +3,7 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import Layout from '@/components/Layout';
 import SEO from '@/components/SEO';
 import OptimizedImage from '@/components/OptimizedImage';
-import warehouseImage from '@/assets/warehouse.jpg';
+import partnershipImage from '@/assets/business-partnership.jpg';
 
 const PrivacyPolicy: React.FC = () => {
   const { t, language } = useLanguage();
@@ -25,8 +25,8 @@ const PrivacyPolicy: React.FC = () => {
       <section className="relative h-[40vh] min-h-[300px] flex items-center">
         <div className="absolute inset-0">
           <OptimizedImage
-            src={warehouseImage}
-            alt="Karken Company warehouse"
+            src={partnershipImage}
+            alt="Karken Company privacy and trust"
             className="w-full h-full object-cover"
             priority
           />

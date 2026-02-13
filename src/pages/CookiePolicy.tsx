@@ -3,7 +3,7 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import Layout from '@/components/Layout';
 import SEO from '@/components/SEO';
 import OptimizedImage from '@/components/OptimizedImage';
-import qualityImage from '@/assets/quality-control.jpg';
+import qualityImage from '@/assets/food-quality-lab.jpg';
 
 const CookiePolicy: React.FC = () => {
   const { t, language } = useLanguage();

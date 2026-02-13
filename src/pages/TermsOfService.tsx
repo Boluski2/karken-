@@ -3,7 +3,7 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import Layout from '@/components/Layout';
 import SEO from '@/components/SEO';
 import OptimizedImage from '@/components/OptimizedImage';
-import shippingImage from '@/assets/shipping-port.jpg';
+import shippingImage from '@/assets/shipping-logistics.jpg';
 
 const TermsOfService: React.FC = () => {
   const { t, language } = useLanguage();

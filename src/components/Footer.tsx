@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { MapPin, Phone, Mail } from 'lucide-react';
-import karkenLogo from '@/assets/KarkenLogo_page.jpg';
+import karkenLogo from '@/assets/karken-logo.jpg';
 
 const Footer: React.FC = () => {
   const { t } = useLanguage();
@@ -112,7 +112,7 @@ const Footer: React.FC = () => {
         {/* Copyright */}
         <div className="mt-16 pt-8 border-t border-background/10">
           <p className="text-center text-background/50 text-sm">
-            {t('footer.copyright').replace('{year}', new Date().getFullYear())}
+            {t('footer.copyright')}
           </p>
         </div>
       </div>

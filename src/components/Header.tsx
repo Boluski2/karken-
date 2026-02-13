@@ -4,7 +4,7 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import { Menu, X, Globe } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useState } from 'react';
-import karkenLogo from '@/assets/KarkenLogo_page.jpg';
+import karkenLogo from '@/assets/karken-logo.jpg';
 
 const Header: React.FC = () => {
   const { t, language, setLanguage } = useLanguage();
@@ -60,9 +60,9 @@ const Header: React.FC = () => {
               <Globe className="w-4 h-4" />
               <span>{language === 'lt' ? 'EN' : 'LT'}</span>
             </button>
-            <Button asChild>
+            {/* <Button asChild>
               <Link to="/contact">{t('hero.cta')}</Link>
-            </Button>
+            </Button> */}
           </div>
 
           {/* Mobile Menu Button */}
