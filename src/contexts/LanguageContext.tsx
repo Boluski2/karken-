@@ -1,5 +1,8 @@
 import React, { createContext, useContext, useState, ReactNode } from 'react';
 
+
+const currentYear = new Date().getFullYear();
+
 type Language = 'lt' | 'en';
 
 interface LanguageContextType {
@@ -151,6 +154,35 @@ const translations = {
         partners: 'Augantis',
         partnersLabel: 'partnerių tinklas',
       },
+    },
+    faq: {
+      title: 'Dažnai užduodami klausimai',
+      items: [
+        {
+          question: 'Kaip užsakyti produktus?',
+          answer: 'Susisiekite su mumis per kontaktų formą arba telefonu +370 604 87253, ir mūsų komanda jums padės pasirinkti tinkamus produktus ir sutvarkys užsakymą.'
+        },
+        {
+          question: 'Ar produktai atitinka ES standartus?',
+          answer: 'Taip, visi mūsų produktai visiškai atitinka ES maisto saugos reglamentus (Reglamentas (ES) Nr. 1169/2011) ir turi reikalingą dokumentaciją.'
+        },
+        {
+          question: 'Kiek laiko trunka pristatymas?',
+          answer: 'Pristatymas iš mūsų Vilniaus sandėlio į Jūsų vietą vyks per 3-5 darbo dienas, priklausomai nuo lokacijos Lietuvoje.'
+        },
+        {
+          question: 'Ar turite minimalų užsakymo dydį?',
+          answer: 'Mūsų preliminarūs užsakymai lankstūs – nuo bandomųjų užsakymų iki didelių apimčių. Susisiekite su mumis, kad sužinotumėte konkrečias sąlygas.'
+        },
+        {
+          question: 'Ar produktai turi Halal sertifikatą?',
+          answer: 'Kur taikoma, mūsų produktai yra sertifikuoti kaip Halal. Išsamesnę informaciją apie konkretūs produktus rasite mūsų kataloge.'
+        },
+        {
+          question: 'Kokios yra jūsų šaltinės?',
+          answer: 'Bendradarbiaujame tik su licencijuotais gamintojais ir įgaliotais platintojais, užtikrindami autentiškumą, sekamumą ir sąžiningą prekybą.'
+        }
+      ]
     },
     marketDemand: {
       title: 'Rinkos paklausa',
@@ -329,6 +361,7 @@ const translations = {
         catalog: 'Užklauskite produktų katalogo',
         consultation: 'Sutvarkykite konsultaciją',
       },
+      //  +37060487253
       info: {
         company: 'Karken Company, UAB',
         address: 'Smolensko g. 10-95, Vilnius, LT-04312',
@@ -347,7 +380,7 @@ const translations = {
       privacy: 'Privatumo politika',
       terms: 'Naudojimo sąlygos',
       cookies: 'Slapukų politika',
-      copyright: '© 2026 Karken Company, UAB. Visos teisės saugomos.',
+      copyright: `© ${currentYear} Karken Company, UAB. Visos teisės saugomos.`,
     },
     cta: {
       title: 'Kurkime įtraukiamą maisto ateitį kartu',
@@ -584,6 +617,35 @@ const translations = {
       p2: 'African food products are becoming increasingly popular both in diaspora communities and among local residents seeking new flavours.',
       p3: 'Karken Company bridges the gap between demand and supply, delivering authentic, high-quality products that meet EU standards.',
     },
+     faq: {
+      title: 'Frequently Asked Questions',
+      items: [
+        {
+          question: 'How do I place an order?',
+          answer: 'Contact us through the contact form or call +370 604 87253, and our team will help you select the right products and process your order.'
+        },
+        {
+          question: 'Do your products meet EU standards?',
+          answer: 'Yes, all our products fully comply with EU food safety regulations (Regulation (EU) No 1169/2011) and include necessary documentation.'
+        },
+        {
+          question: 'How long does delivery take?',
+          answer: 'Delivery from our Vilnius warehouse to your location will take 3-5 working days, depending on your location in Lithuania.'
+        },
+        {
+          question: 'Do you have a minimum order size?',
+          answer: 'Our orders are flexible—from pilot batches to large volumes. Contact us to learn about specific terms.'
+        },
+        {
+          question: 'Are your products Halal certified?',
+          answer: 'Where applicable, our products are Halal certified. For detailed information about specific products, consult our catalog.'
+        },
+        {
+          question: 'What are your sources?',
+          answer: 'We work only with licensed manufacturers and authorised distributors, ensuring authenticity, traceability, and fair trade practices.'
+        }
+      ]
+    },
     services: {
       title: 'For Retailers & Business Partners',
       subtitle: 'Why Partner With Karken?',
@@ -772,7 +834,7 @@ const translations = {
       privacy: 'Privacy Policy',
       terms: 'Terms of Service',
       cookies: 'Cookie Policy',
-      copyright: '© 2026 Karken Company, UAB. All rights reserved.',
+      copyright: `© ${currentYear} Karken Company, UAB. All rights reserved.`,
     },
     cta: {
       title: 'Let\'s Build an Inclusive Food Future Together',

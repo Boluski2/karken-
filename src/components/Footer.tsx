@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { MapPin, Phone, Mail } from 'lucide-react';
 import karkenLogo from '@/assets/karken-logo.jpg';
+const currentYear = new Date().getFullYear();
 
 const Footer: React.FC = () => {
   const { t } = useLanguage();
@@ -64,7 +65,7 @@ const Footer: React.FC = () => {
               <li className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-primary flex-shrink-0" />
                 <span className="text-background/70 text-sm">
-                  +370 609 09398
+                  +370 604 87253
                 </span>
               </li>
               <li className="flex items-center space-x-3">

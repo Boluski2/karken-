@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '@/contexts/LanguageContext';
 import Layout from '@/components/Layout';
@@ -6,7 +6,7 @@ import SEO from '@/components/SEO';
 import OptimizedImage from '@/components/OptimizedImage';
 import ScrollReveal from '@/components/ScrollReveal';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, Truck, Shield, Globe2, Package } from 'lucide-react';
+import { ArrowRight, Truck, Shield, Globe2, Package, ChevronDown } from 'lucide-react';
 import heroImage from '@/assets/hero-nigerian-food.jpg';
 import rootsImage from '@/assets/african-roots-display.jpg';
 // import sourcingImage from '@/assets/african-sourcing-farm.jpg';
@@ -21,6 +21,7 @@ import sourcingImage from '@/assets/warehouse.jpg';
 
 const Index: React.FC = () => {
   const { t, language } = useLanguage();
+  // const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(null);
 
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -300,6 +301,60 @@ const Index: React.FC = () => {
           </div>
         </ScrollReveal>
       </section>
+
+       {/* FAQ Section */}
+      {/* <section className="section-padding bg-muted">
+        <div className="container-wide">
+          <ScrollReveal>
+            <header className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">
+                {t('faq.title')}
+              </h2>
+            </header>
+          </ScrollReveal>
+
+          <div className="max-w-3xl mx-auto">
+            {t('faq.items').map((item: any, index: number) => (
+              <ScrollReveal key={index}>
+                <article className="mb-4 bg-card rounded-lg shadow-md overflow-hidden">
+                  <button
+                    onClick={() => setOpenFaqIndex(openFaqIndex === index ? null : index)}
+                    className="w-full px-6 py-4 flex items-center justify-between hover:bg-muted transition-colors"
+                  >
+                    <h3 className="text-lg font-semibold text-foreground text-left">
+                      {item.question}
+                    </h3>
+                    <ChevronDown
+                      className={`w-5 h-5 text-primary transition-transform duration-300 flex-shrink-0 ml-4 ${
+                        openFaqIndex === index ? 'rotate-180' : ''
+                      }`}
+                    />
+                  </button>
+                  {openFaqIndex === index && (
+                    <div className="px-6 py-4 border-t border-muted bg-background">
+                      <p className="text-muted-foreground leading-relaxed">
+                        {item.answer}
+                      </p>
+                    </div>
+                  )}
+                </article>
+              </ScrollReveal>
+            ))}
+          </div>
+
+          <div className="text-center mt-12">
+            <p className="text-muted-foreground mb-6">
+              {language === 'lt' ? 'Dar turite klausimų?' : "Still have questions?"}
+            </p>
+            <Button asChild variant="default" size="lg">
+              <Link to="/contact">
+                {t('hero.ctaSecondary')}
+                <ArrowRight className="w-4 h-4 ml-2" />
+              </Link>
+            </Button>
+          </div>
+        </div>
+      </section> */}
 
       {/* CTA Section */}
       <section className="relative py-24">
