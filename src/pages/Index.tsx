@@ -21,7 +21,13 @@ import sourcingImage from '@/assets/warehouse.jpg';
 
 const Index: React.FC = () => {
   const { t, language } = useLanguage();
-  // const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(null);
+  const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(null);
+
+  interface FAQItem {
+  question: string;
+  answer: string;
+}
+
 
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -303,58 +309,75 @@ const Index: React.FC = () => {
       </section>
 
        {/* FAQ Section */}
-      {/* <section className="section-padding bg-muted">
-        <div className="container-wide">
-          <ScrollReveal>
-            <header className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">
-                {t('faq.title')}
-              </h2>
-            </header>
-          </ScrollReveal>
-
+      <section className="section-padding bg-muted">
+        <ScrollReveal className="container-wide">
           <div className="max-w-3xl mx-auto">
-            {t('faq.items').map((item: any, index: number) => (
-              <ScrollReveal key={index}>
-                <article className="mb-4 bg-card rounded-lg shadow-md overflow-hidden">
-                  <button
-                    onClick={() => setOpenFaqIndex(openFaqIndex === index ? null : index)}
-                    className="w-full px-6 py-4 flex items-center justify-between hover:bg-muted transition-colors"
-                  >
-                    <h3 className="text-lg font-semibold text-foreground text-left">
-                      {item.question}
-                    </h3>
-                    <ChevronDown
-                      className={`w-5 h-5 text-primary transition-transform duration-300 flex-shrink-0 ml-4 ${
-                        openFaqIndex === index ? 'rotate-180' : ''
-                      }`}
-                    />
-                  </button>
-                  {openFaqIndex === index && (
-                    <div className="px-6 py-4 border-t border-muted bg-background">
-                      <p className="text-muted-foreground leading-relaxed">
-                        {item.answer}
-                      </p>
-                    </div>
-                  )}
-                </article>
-              </ScrollReveal>
-            ))}
-          </div>
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-8 text-center">
+              {t('faq.title')}
+            </h2>
 
-          <div className="text-center mt-12">
-            <p className="text-muted-foreground mb-6">
-              {language === 'lt' ? 'Dar turite klausimų?' : "Still have questions?"}
-            </p>
-            <Button asChild variant="default" size="lg">
-              <Link to="/contact">
-                {t('hero.ctaSecondary')}
-                <ArrowRight className="w-4 h-4 ml-2" />
-              </Link>
-            </Button>
-          </div>
-        </div>
-      </section> */}
+            <div>
+              {t('faq.items').map((item: any, index: number) => (
+                  <article key={index} className="mb-4 bg-card rounded-lg shadow-md overflow-hidden">
+                    <button
+                      onClick={() => setOpenFaqIndex(openFaqIndex === index ? null : index)}
+                      className="w-full px-6 py-4 flex items-center justify-between hover:bg-muted transition-colors"
+                    >
+                      <h3 className="text-lg font-semibold text-foreground text-left">
+                        {item.question}
+                      </h3>
+                      <ChevronDown
+                        className={`w-5 h-5 text-primary transition-transform duration-300 flex-shrink-0 ml-4 ${
+                          openFaqIndex === index ? 'rotate-180' : ''
+                        }`}
+                      />
+                    </button>
+                    {openFaqIndex === index && (
+                      <div className="px-6 py-4 border-t border-muted bg-background">
+                        {item.answer.includes('•') ? (
+                          <ul className="text-muted-foreground leading-relaxed space-y-2 list-none">
+                            {item.answer.split('\n').map((line: string, lineIndex: number) => {
+                              const trimmedLine = line.trim();
+                              if (trimmedLine.startsWith('•')) {
+                                return (
+                                  <li key={lineIndex} className="flex items-start gap-3">
+                                    <span className="text-primary font-bold flex-shrink-0 mt-1">•</span>
+                                    <span>{trimmedLine.substring(1).trim()}</span>
+                                  </li>
+                                );
+                              }
+                              if (trimmedLine) {
+                                return <p key={lineIndex}>{trimmedLine}</p>;
+                              }
+                              return null;
+                            })}
+                          </ul>
+                        ) : (
+                          <p className="text-muted-foreground leading-relaxed">
+                            {item.answer}
+                          </p>
+                        )}
+                      </div>
+                    )}
+                  </article>
+                ))}
+              </div>
+
+              <div className="mt-8 text-center">
+                <p className="text-muted-foreground mb-6">
+                  {language === 'lt' ? 'Dar turite klausimų?' : "Still have questions?"}
+                </p>
+                <Button asChild variant="default" size="lg">
+                  <Link to="/contact">
+                    {t('hero.ctaSecondary')}
+                    <ArrowRight className="w-4 h-4 ml-2" />
+                  </Link>
+                </Button>
+              </div>
+            </div>
+          {/* </div> */}
+        </ScrollReveal>
+      </section>
 
       {/* CTA Section */}
       <section className="relative py-24">

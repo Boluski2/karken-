@@ -159,29 +159,53 @@ const translations = {
       title: 'Dažnai užduodami klausimai',
       items: [
         {
-          question: 'Kaip užsakyti produktus?',
-          answer: 'Susisiekite su mumis per kontaktų formą arba telefonu +370 604 87253, ir mūsų komanda jums padės pasirinkti tinkamus produktus ir sutvarkys užsakymą.'
+          question: 'Kas yra Karken Company, UAB?',
+          answer: 'Karken Company, UAB yra Lietuvoje registruota B2B maisto importo ir platinimo bendrovė (Įmonės kodas: 307213203), specializuojasi autentiškuose Afrikos maisto produktuose. Aptarnaujame etninės parduotuves, bendrąsias mažmenines parduotuves ir institucines įstaigas Baltijos regione. Mūsų operacinis sandėlis yra Vilniuje, Smolensko g. 10-95.'
         },
         {
-          question: 'Ar produktai atitinka ES standartus?',
-          answer: 'Taip, visi mūsų produktai visiškai atitinka ES maisto saugos reglamentus (Reglamentas (ES) Nr. 1169/2011) ir turi reikalingą dokumentaciją.'
+          question: 'Ar aš, kaip privatus asmuo, galiu tiesiogiai pirkti iš jūsų produktus?',
+          answer: 'Neigiamas. Veikiame tik B2B (verslas-verslas) režimu. Neparduodame tiesiogiai galutiniams vartotojams. Jei esate privatus asmuo, skaitykite vietiniu etninių parduotuvę ar mažmenininkus, kurie gali turėti mūsų produktų.'
         },
         {
-          question: 'Kiek laiko trunka pristatymas?',
-          answer: 'Pristatymas iš mūsų Vilniaus sandėlio į Jūsų vietą vyks per 3-5 darbo dienas, priklausomai nuo lokacijos Lietuvoje.'
+          question: 'Kokius produktus teikiate?',
+          answer: 'Specializuojamės greitai parduodamais Afrikos maisto esencialai, įskaitant:\n• Momentines makaronai ir greitai paruošiamus patiekalai\n• Tradicinius grūdus ir miltus (pvz., manioka/garri, kukurūzų miltai)\n• Prieskonius, padažus\n• Nealkoholinius gėrimus\n• Skanumynus ir saldumynus\n\nVisi produktai yra autentiški, kultūriškai reikšmingi ir jau įrodyti afrikietiškose ir Europos diasporoje rinkose.'
         },
         {
-          question: 'Ar turite minimalų užsakymo dydį?',
-          answer: 'Mūsų preliminarūs užsakymai lankstūs – nuo bandomųjų užsakymų iki didelių apimčių. Susisiekite su mumis, kad sužinotumėte konkrečias sąlygas.'
+          question: 'Ar jūsų produktai atitinka ES ir Lietuvos reglamentus?',
+          answer: 'Taip. 100%. Kiekvienas produktas, kurį platinome:\n• Atitinka ES reglamentą (ES) Nr. 1169/2011 dėl informacijos apie maistą\n• Turi dvikalbį ženklinimą (lietuviškai/angliškai)\n• Yra su visa dokumentacija (kilmės sertifikatai, sveikatos liudijimais)\n• Turi Halal sertifikavimą (kur taikoma)\n• Pristatytas su mažiausiai 9 mėnesių galiojime'
         },
         {
-          question: 'Ar produktai turi Halal sertifikatą?',
-          answer: 'Kur taikoma, mūsų produktai yra sertifikuoti kaip Halal. Išsamesnę informaciją apie konkretūs produktus rasite mūsų kataloge.'
+          question: 'Ar jūs turite PVM numerį?',
+          answer: 'Šiuo metu neturime PVM numerio. Kaip naujai registruota bendrovė (Reg. Nr. 307213203), dabar atliekame PVM registraciją Valstybinėje mokesčių inspekcijoje. Visa kainodara nurodyta be PVM.'
         },
         {
-          question: 'Kokios yra jūsų šaltinės?',
-          answer: 'Bendradarbiaujame tik su licencijuotais gamintojais ir įgaliotais platintojais, užtikrindami autentiškumą, sekamumą ir sąžiningą prekybą.'
-        }
+          question: 'Kur jūs esate?',
+          answer: 'Mūsų operacinis sandėlis yra: Smolensko g. 10-95, Vilnius, LT-04312. Tai mūsų logistikos ir gabenimo priėmimo centras. Visi verslo operacijos ir komunikacija yra valdomi iš šio Vilniaus įrenginimo.'
+        },
+        {
+          question: 'Kaip aš galiu padaryti užsakymą arba paprašyti kainos sąrašo?',
+          answer: 'Kadangi mes neparduodame tiesiogiai per svetainę, susisiekite su mumis el. paštu arba telefonu: 📧 hello@karkencompany.lt 📞 +370 604 87253. Pateikus jūsų verslo duomenis (bendrovės pavadinimas, sektorius, tikėtini apimties poreikiai), galime paruošti suasmenintą komercinį pasiūlymą.'
+        },
+        {
+          question: 'Ar jūs turite išimtines teises platinti bet kokias prekės ženklai?',
+          answer: 'Neigiamas. Karken Company, UAB neturi išimtinių platinimo teisių jokiai prekės ženklai ar produktui. Veikiame kaip nepriklausomas importuotojas, tiekiame tik per licencijuotus ir įgaliotus kanalus siekdami užtikrinti autentiškumą ir teisetumą.'
+        },
+        {
+          question: 'Kaip veikia jūsų logistika ir pristatymas?',
+          answer: 'Mūsų procesas veikia taip:\n• Kainos pasiūlymas pateikiamas el. paštu\n• Užsakymai patvirtinami raštu (el. paštu arba sutartimi)\n• Pristatymas organizuojamas iš mūsų Vilniaus sandėlio visoje Lietuvoje\n• Minimalūs užsakymo kiekiai aptariami individualiai, atsižvelgiant į produktą ir partnerystės etapą'
+        },
+        {
+          question: 'Ar galite suteikti bandinius?',
+          answer: 'Taip. Po pradinio verslo patikrinimo ir diskusijos galime sutvarkti bandinių pristatymą jūsų parduotuvei ar sandėliui. Bandiniai gali būti suteikti nemokamai arba minimalia kaina, priklausomai nuo produkto ir kiekio.'
+        },
+        {
+          question: 'Kaip jūs užtikrinat produkto kokybę ir autentiškumą?',
+          answer: 'Kokybės užtikrinimui:\n• Veikiame tik su licencijuotais gamintojais ir įgaliotais platintojais\n• Reikalaujame visos dokumentacijos kiekvienam siuntimui\n• Atliekame vizualią ir dokumentacines inspektcijas gautoje mūsų sandėlyje\n• Vengiame trečiųjų šalių perpardavėjų, kurie negali patikrinti produkto kilmės'
+        },
+        // {
+        //   question: 'Ar jūs planuojate išplėsti jūsų produktų asortimentą?',
+        //   answer: 'Taip. Mūsų portfelį nuolat tobulinsime remiantis tiesioginiu partnerių ir bendruomenės atsiliepimais. Jei turite konkrečių produktų prašymų, mielai juos įvertinsime!'
+        // }
       ]
     },
     marketDemand: {
@@ -621,28 +645,52 @@ const translations = {
       title: 'Frequently Asked Questions',
       items: [
         {
-          question: 'How do I place an order?',
-          answer: 'Contact us through the contact form or call +370 604 87253, and our team will help you select the right products and process your order.'
+          question: 'What is Karken Company, UAB?',
+          answer: 'Karken Company, UAB is a Lithuanian-registered B2B food import and distribution company (Company Code: 307213203), specializing in authentic African grocery products for ethnic stores, mainstream retailers, and institutional clients across the Baltic region. Our operational warehouse is located in Vilnius, Smolensko g. 10-95.'
         },
         {
-          question: 'Do your products meet EU standards?',
-          answer: 'Yes, all our products fully comply with EU food safety regulations (Regulation (EU) No 1169/2011) and include necessary documentation.'
+          question: 'Can I purchase products directly from you as an individual?',
+          answer: 'No. We operate exclusively in B2B (business-to-business) mode. We do not sell to end consumers. If you are a private individual, please contact local ethnic grocery stores or retailers that may carry our products.'
         },
         {
-          question: 'How long does delivery take?',
-          answer: 'Delivery from our Vilnius warehouse to your location will take 3-5 working days, depending on your location in Lithuania.'
+          question: 'What types of products do you supply?',
+          answer: 'We specialize in fast-moving African grocery essentials, including:\n• Instant noodles and quick-prep meals\n• Traditional grains and flours (e.g., cassava/garri, maize meal)\n• Spices, seasonings, and sauces\n• Non-alcoholic beverages\n• Snacks and confectionery\n\nAll products are authentic, culturally significant, and already proven in African and European diaspora markets.'
         },
         {
-          question: 'Do you have a minimum order size?',
-          answer: 'Our orders are flexible—from pilot batches to large volumes. Contact us to learn about specific terms.'
+          question: 'Do your products comply with EU and Lithuanian regulations?',
+          answer: 'Yes. 100%. Every product we distribute:\n• Complies with EU Regulation (EU) No 1169/2011 on food information to consumers\n• Features bilingual labelling (Lithuanian/English)\n• Is accompanied by full documentation (certificates of origin, health attestations, ingredient declarations)\n• Carries Halal certification where applicable\n• Is delivered with a minimum 9-month shelf life'
         },
         {
-          question: 'Are your products Halal certified?',
-          answer: 'Where applicable, our products are Halal certified. For detailed information about specific products, consult our catalog.'
+          question: 'Do you have a VAT number?',
+          answer: 'We currently do not have a VAT number. As a newly registered company (Reg. No. 307213203), we are in the process of completing VAT registration with the State Tax Inspectorate of Lithuania. All pricing is quoted exclusive of VAT.'
         },
         {
-          question: 'What are your sources?',
-          answer: 'We work only with licensed manufacturers and authorised distributors, ensuring authenticity, traceability, and fair trade practices.'
+          question: 'Where are you located?',
+          answer: 'Our operational warehouse is at: Smolensko g. 10-95, Vilnius, LT-04312. This is our logistics and goods reception hub. All business operations and communications are managed from this Vilnius facility.'
+        },
+        {
+          question: 'How can I place an order or request a price list?',
+          answer: 'Since we do not conduct direct sales through our website, please contact us via email or phone: 📧 hello@karkencompany.lt 📞 +370 604 87253. After providing your business details (company name, sector, estimated volume needs), we can prepare a customized commercial offer.'
+        },
+        {
+          question: 'Do you hold exclusive rights to distribute any brands?',
+          answer: 'No. Karken Company, UAB does not hold exclusive distribution rights for any brand or product. We operate as an independent importer, sourcing exclusively through licensed and authorized channels to ensure authenticity and legality.'
+        },
+        {
+          question: 'How does your logistics and delivery work?',
+          answer: 'Our process works as follows:\n• Quotations are provided via email\n• Orders are confirmed in writing (email or contract)\n• Delivery is arranged from our Vilnius warehouse nationwide across Lithuania\n• Minimum order quantities are discussed individually, depending on the product and partnership stage'
+        },
+        {
+          question: 'Can you provide samples?',
+          answer: 'Yes. Following an initial business verification and discussion, we can arrange sample deliveries to your store or warehouse. Samples may be provided free of charge or at a nominal cost, depending on the product and quantity.'
+        },
+        {
+          question: 'How do you ensure product quality and authenticity?',
+          answer: 'For quality assurance, we:\n• Work only with licensed manufacturers and authorized distributors\n• Require full documentation for every shipment\n• Conduct visual and documentary inspections upon receipt at our warehouse\n• Avoid third-party resellers who cannot verify product origin'
+        },
+        {
+          question: 'Do you plan to expand your product range?',
+          answer: 'Yes. Our portfolio is continuously refined based on real feedback from partners and communities. If you have specific product requests, we welcome the opportunity to evaluate them!'
         }
       ]
     },
