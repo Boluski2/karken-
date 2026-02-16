@@ -160,52 +160,52 @@ const translations = {
       items: [
         {
           question: 'Kas yra Karken Company, UAB?',
-          answer: 'Karken Company, UAB yra Lietuvoje registruota B2B maisto importo ir platinimo bendrovė (Įmonės kodas: 307213203), specializuojasi autentiškuose Afrikos maisto produktuose. Aptarnaujame etninės parduotuves, bendrąsias mažmenines parduotuves ir institucines įstaigas Baltijos regione. Mūsų operacinis sandėlis yra Vilniuje, Smolensko g. 10-95.'
+          answer: 'Karken Company, UAB yra Lietuvoje įregistruota B2B maisto importo ir platinimo įmonė (įmonės kodas: 307213203), specializuojanti autentiškų afrikietiškų maisto produktų tiekimui etninėms parduotuvėms, bendrosioms mažmeninės prekybos įstaigoms bei institucinėms organizacijoms Baltijos regione. Mūsų operacinis sandėlis įsikūręs Vilniuje Smolensko g. 10-95.'
         },
         {
-          question: 'Ar aš, kaip privatus asmuo, galiu tiesiogiai pirkti iš jūsų produktus?',
-          answer: 'Neigiamas. Veikiame tik B2B (verslas-verslas) režimu. Neparduodame tiesiogiai galutiniams vartotojams. Jei esate privatus asmuo, skaitykite vietiniu etninių parduotuvę ar mažmenininkus, kurie gali turėti mūsų produktų.'
+          question: 'Ar galiu pirkti produktus tiesiogiai iš jūsų kaip fizinis asmuo?',
+          answer: 'Ne. Mes veikiame išskirtinai B2B (verslas-verslui) režimu. Netiekime galutiniams vartotojams. Jei esate fizinis asmuo, prašome kreiptis į vietines etnines parduotuves ar mažmenininkus, kurie gali turėti mūsų produktų.'
         },
         {
-          question: 'Kokius produktus teikiate?',
-          answer: 'Specializuojamės greitai parduodamais Afrikos maisto esencialai, įskaitant:\n• Momentines makaronai ir greitai paruošiamus patiekalai\n• Tradicinius grūdus ir miltus (pvz., manioka/garri, kukurūzų miltai)\n• Prieskonius, padažus\n• Nealkoholinius gėrimus\n• Skanumynus ir saldumynus\n\nVisi produktai yra autentiški, kultūriškai reikšmingi ir jau įrodyti afrikietiškose ir Europos diasporoje rinkose.'
+          question: 'Kokius produktus tiekiate?',
+          answer: 'Specializuojamės sparčiai parduodamuose afrikietiškuose maisto esminiuose produktuose, įskaitant:\n• Greitai paruošiamus makaronus ir patiekalus\n• Tradicinius grūdus ir miltus (pvz., manioką/garri, kukurūzų miltus)\n• Prieskonius, seasonings ir padažus\n• Bealkoholinius gėrimus\n• Užkandžius ir saldumynus\n\nVisi produktai yra autentiški, kultūriškai reikšmingi ir jau įrodyti Afrikos bei Europos diasporos rinkose.'
         },
         {
-          question: 'Ar jūsų produktai atitinka ES ir Lietuvos reglamentus?',
-          answer: 'Taip. 100%. Kiekvienas produktas, kurį platinome:\n• Atitinka ES reglamentą (ES) Nr. 1169/2011 dėl informacijos apie maistą\n• Turi dvikalbį ženklinimą (lietuviškai/angliškai)\n• Yra su visa dokumentacija (kilmės sertifikatai, sveikatos liudijimais)\n• Turi Halal sertifikavimą (kur taikoma)\n• Pristatytas su mažiausiai 9 mėnesių galiojime'
+          question: ' Ar jūsų produktai atitinka ES ir Lietuvos reikalavimus?',
+          answer: 'Taip. 100 %. Kiekvienas produktas:\n• Atitinka ES reglamentą (ES) Nr. 1169/2011 dėl maisto informacijos vartotojams\n• Turi dvikalbį ženklinimą (lietuvių/anglų kalba)\n• Yra palydėtas visais būtinais dokumentais (kilmės, sveikatos, ingredientų deklaracijomis)\n• Turi Halal sertifikatą, kur taikoma\n• Tiekiamas su mažiausiai 9 mėnesių galiojimo laiku'
         },
         {
-          question: 'Ar jūs turite PVM numerį?',
-          answer: 'Šiuo metu neturime PVM numerio. Kaip naujai registruota bendrovė (Reg. Nr. 307213203), dabar atliekame PVM registraciją Valstybinėje mokesčių inspekcijoje. Visa kainodara nurodyta be PVM.'
+          question: 'Ar turite PVM mokėtojo kodą?',
+          answer: 'Šiuo metu neturime PVM mokėtojo kodo. Kaip naujai įregistruota įmonė (įm. kodas: 307213203), vykdoma mūsų PVM registracija Valstybinėje mokesčių inspekcijoje. Visos kainos nurodomos be PVM.'
         },
         {
-          question: 'Kur jūs esate?',
-          answer: 'Mūsų operacinis sandėlis yra: Smolensko g. 10-95, Vilnius, LT-04312. Tai mūsų logistikos ir gabenimo priėmimo centras. Visi verslo operacijos ir komunikacija yra valdomi iš šio Vilniaus įrenginimo.'
+          question: 'Kur esate įsikūrę?',
+           answer: 'Mūsų operacinis sandėlis yra:\n• Smolensko g. 10-95, Vilnius, LT-04312.\n• Tai – mūsų logistikos ir prekių priėmimo centras. Visi verslo ryšiai vykdomi būtent iš šios vietos.'
         },
         {
-          question: 'Kaip aš galiu padaryti užsakymą arba paprašyti kainos sąrašo?',
-          answer: 'Kadangi mes neparduodame tiesiogiai per svetainę, susisiekite su mumis el. paštu arba telefonu: 📧 hello@karkencompany.lt 📞 +370 604 87253. Pateikus jūsų verslo duomenis (bendrovės pavadinimas, sektorius, tikėtini apimties poreikiai), galime paruošti suasmenintą komercinį pasiūlymą.'
+          question: 'Kaip užsakyti produktus ar gauti kainoraštį?',
+         answer: 'Kadangi mes nevykdome tiesioginių pardavimų per svetainę, prašome susisiekti el. paštu arba telefonu:\n• 📧 hello@karkencompany.lt\n• 📞 +370 604 87253\n• Pateikę savo verslo informaciją (įmonės pavadinimą, veiklos sritį, apytikslę poreikių apimtį), galėsime jums pateikti personalizuotą komercinį pasiūlymą.'
         },
         {
-          question: 'Ar jūs turite išimtines teises platinti bet kokias prekės ženklai?',
-          answer: 'Neigiamas. Karken Company, UAB neturi išimtinių platinimo teisių jokiai prekės ženklai ar produktui. Veikiame kaip nepriklausomas importuotojas, tiekiame tik per licencijuotus ir įgaliotus kanalus siekdami užtikrinti autentiškumą ir teisetumą.'
+          question: 'Ar turite išimtines teises platinti tam tikrus prekių ženklus?',
+          answer: 'Ne. Karken Company, UAB neturi išimtinių platinimo teisių jokiai prekei ar prekės ženklui. Veikiame kaip nepriklausomas importuotojas, tiekiantis produktus per licencijuotus ir įgaliotus kanalus, užtikrindami autentiškumą ir teisėtumą.'
         },
         {
           question: 'Kaip veikia jūsų logistika ir pristatymas?',
-          answer: 'Mūsų procesas veikia taip:\n• Kainos pasiūlymas pateikiamas el. paštu\n• Užsakymai patvirtinami raštu (el. paštu arba sutartimi)\n• Pristatymas organizuojamas iš mūsų Vilniaus sandėlio visoje Lietuvoje\n• Minimalūs užsakymo kiekiai aptariami individualiai, atsižvelgiant į produktą ir partnerystės etapą'
+          answer: 'Pasiūlymus pateikiame per el. paštą\n• Užsakymai tvirtinami raštu (el. laišku ar sutartimi)\n• Pristatymas vykdomas iš Vilniaus sandėlio į visą Lietuvą\n• Minimalus užsakymo kiekis aptariamas individualiai, priklausomai nuo produkto ir partnerystės etapo'
         },
         {
-          question: 'Ar galite suteikti bandinius?',
-          answer: 'Taip. Po pradinio verslo patikrinimo ir diskusijos galime sutvarkti bandinių pristatymą jūsų parduotuvei ar sandėliui. Bandiniai gali būti suteikti nemokamai arba minimalia kaina, priklausomai nuo produkto ir kiekio.'
+          question: 'Ar galite pateikti mėginius?',
+          answer: 'Taip. Po pradinio susipažinimo ir verslo patvirtinimo, galime organizuoti mėginių pristatymą į jūsų parduotuvę ar sandėlį. Mėginiai gali būti nemokami arba už simbolinę kainą – priklausomai nuo produkto ir apimties.'
         },
         {
-          question: 'Kaip jūs užtikrinat produkto kokybę ir autentiškumą?',
-          answer: 'Kokybės užtikrinimui:\n• Veikiame tik su licencijuotais gamintojais ir įgaliotais platintojais\n• Reikalaujame visos dokumentacijos kiekvienam siuntimui\n• Atliekame vizualią ir dokumentacines inspektcijas gautoje mūsų sandėlyje\n• Vengiame trečiųjų šalių perpardavėjų, kurie negali patikrinti produkto kilmės'
+          question: 'Kaip užtikrinate produkto kokybę ir autentiškumą?',
+          answer: 'Mes:\n• Dirbame tik su licencijuotais gamintojais ir įgaliotais platintojais\n• Reikalaujame visos būtinos dokumentacijos kiekvienam siuntimui\n• Atliekame vizualinę ir dokumentinę kontrolę sandėlyje\n• Nenaudojame trečiųjų šalių perpardavėjų, kurie negali patvirtinti kilmės'
         },
-        // {
-        //   question: 'Ar jūs planuojate išplėsti jūsų produktų asortimentą?',
-        //   answer: 'Taip. Mūsų portfelį nuolat tobulinsime remiantis tiesioginiu partnerių ir bendruomenės atsiliepimais. Jei turite konkrečių produktų prašymų, mielai juos įvertinsime!'
-        // }
+        {
+          question: 'Ar planuojate plėsti asortimentą?',
+          answer: 'Taip. Mūsų asortimentas nuolat tobulinamas remiantis realiais partnerių ir bendruomenių poreikiais. Jei turite konkrečių produktų pageidavimų, mielai juos įvertinsime!'
+        }
       ]
     },
     marketDemand: {
