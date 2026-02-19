@@ -1,73 +1,59 @@
-<!-- # Welcome to your Lovable project
+# Baltic Harvest Hub — Karken Company
 
-## Project info
+> A responsive, SEO-first marketing site for a B2B food distributor (Lithuania / Baltic region).
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## Overview
 
-## How can I edit this code?
+This project is a multi-page marketing site built for Karken Company, a B2B distributor of authentic African food products. The site is implemented with modern frontend tooling and focuses on performance, accessibility and search-engine readiness. It includes bilingual content (Lithuanian / English), structured data (JSON-LD), and an EmailJS-powered contact flow for lead capture.
 
-There are several ways of editing your application.
+## Highlights
 
-**Use Lovable**
+- Responsive, accessible UI built with Tailwind CSS
+- React + TypeScript app scaffolded with Vite
+- Multi-language content using a custom `LanguageProvider` (`lt` / `en`)
+- SEO-ready via `react-helmet-async`, Open Graph/Twitter tags and JSON-LD
+- Optimized images with IntersectionObserver (`src/components/OptimizedImage.tsx`) and priority loads for hero assets
+- Reusable component library (Radix primitives + local `ui/` components)
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+## Tech stack
 
-Changes made via Lovable will be committed automatically to this repo.
+- React, TypeScript, Vite
+- Tailwind CSS
+- React Router, @tanstack/react-query
+- Framer Motion, lucide-react, Radix UI primitives
+- EmailJS (contact form scaffolding)
+- Vitest, ESLint
 
-**Use your preferred IDE**
+## Run locally
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Install and start the dev server:
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+```bash
+npm install
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+Build and preview production bundle:
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+```bash
+npm run build
+npm run preview
+```
 
-**Use GitHub Codespaces**
+## Important files to cite in a portfolio
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+- [package.json](baltic-harvest-hub/package.json) — dependencies and scripts
+- [vite.config.ts](baltic-harvest-hub/vite.config.ts) — build config & path alias
+- [tailwind.config.ts](baltic-harvest-hub/tailwind.config.ts) — theme and utilities
+- [src/App.tsx](baltic-harvest-hub/src/App.tsx) — providers and routing
+- [src/components/SEO.tsx](baltic-harvest-hub/src/components/SEO.tsx) — SEO/meta + JSON-LD
+- [src/components/OptimizedImage.tsx](baltic-harvest-hub/src/components/OptimizedImage.tsx) — lazy/priority image logic
+- [src/contexts/LanguageContext.tsx](baltic-harvest-hub/src/contexts/LanguageContext.tsx) — bilingual provider
+- [src/config/emailjs.ts](baltic-harvest-hub/src/config/emailjs.ts) — EmailJS setup scaffold
 
-## What technologies are used for this project?
+## Suggested screenshots for portfolio
 
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain) -->
+- Homepage hero (full-bleed image + CTA)
+- Services grid (sourcing / export / import / distribution cards)
+- Contact form + success toast (demonstrates EmailJS flow)
+- About / Compliance section (bilingual content and JSON-LD evidence)
