@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import emailjs from '@emailjs/browser';
 import { z } from 'zod';
 import { useLanguage } from '@/contexts/LanguageContext';
 import Layout from '@/components/Layout';
@@ -10,7 +9,7 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { MapPin, Phone, Mail, Clock, CheckCircle, Loader2 } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
-import { EMAILJS_CONFIG } from '@/config/emailjs';
+import { BACKEND_CONFIG } from '@/config/emailjs';
 import partnershipImage from '@/assets/business-partnership.jpg';
 
 // Form validation schema
@@ -61,34 +60,26 @@ const Contact: React.FC = () => {
       return;
     }
 
-    if (
-      EMAILJS_CONFIG.SERVICE_ID === 'YOUR_SERVICE_ID' ||
-      EMAILJS_CONFIG.TEMPLATE_ID === 'YOUR_TEMPLATE_ID' ||
-      EMAILJS_CONFIG.PUBLIC_KEY === 'YOUR_PUBLIC_KEY'
-    ) {
-      toast({
-        title: 'Configuration Required',
-        description: 'Please configure EmailJS credentials in src/config/emailjs.ts',
-        variant: 'destructive',
-      });
-      return;
-    }
-
     setIsLoading(true);
 
     try {
-      await emailjs.send(
-        EMAILJS_CONFIG.SERVICE_ID,
-        EMAILJS_CONFIG.TEMPLATE_ID,
-        {
-          from_name: result.data.name,
-          from_email: result.data.email,
+      const response = await fetch(`${BACKEND_CONFIG.API_URL}/api/contact`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: result.data.name,
+          email: result.data.email,
           company: result.data.company || 'Not provided',
           phone: result.data.phone || 'Not provided',
           message: result.data.message,
-        },
-        EMAILJS_CONFIG.PUBLIC_KEY
-      );
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
 
       setIsSubmitted(true);
       toast({
@@ -96,7 +87,7 @@ const Contact: React.FC = () => {
         description: 'We will get back to you soon.',
       });
     } catch (error) {
-      console.error('EmailJS error:', error);
+      console.error('Submission error:', error);
       toast({
         title: 'Error',
         description: 'Failed to send message. Please try again later.',
