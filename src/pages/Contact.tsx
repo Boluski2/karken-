@@ -63,7 +63,7 @@ const Contact: React.FC = () => {
     setIsLoading(true);
 
     try {
-      const response = await fetch(`${BACKEND_CONFIG.API_URL}/api/contact`, {
+      const response = await fetch(`https://karkencompany-backend.vercel.app/`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
