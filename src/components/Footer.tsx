@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { MapPin, Phone, Mail } from 'lucide-react';
 import karkenLogo from '@/assets/karken-logo.jpg';
+import OptimizedImage from '@/components/OptimizedImage';
 const currentYear = new Date().getFullYear();
 
 const Footer: React.FC = () => {
@@ -24,7 +25,7 @@ const Footer: React.FC = () => {
           {/* Brand */}
           <div className="lg:col-span-1">
             <Link to="/" className="inline-block mb-6">
-              <img src={karkenLogo} alt="Karken Company" className="h-14 w-auto" />
+              <OptimizedImage src={karkenLogo} alt="Karken Company" className="h-14 w-auto" />
             </Link>
             <p className="text-background/70 text-sm leading-relaxed">
               {t('footer.description')}

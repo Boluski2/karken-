@@ -19,6 +19,10 @@ const OptimizedImage: React.FC<OptimizedImageProps> = ({
   const [isInView, setIsInView] = useState(priority);
   const imgRef = useRef<HTMLImageElement>(null);
 
+  const avifSrc = src.replace(/\.(jpe?g|png)$/i, '.avif');
+  const webpSrc = src.replace(/\.(jpe?g|png)$/i, '.webp');
+  const { srcSet, sizes, ...restProps } = props as any;
+
   useEffect(() => {
     if (priority) {
       setIsInView(true);
@@ -46,20 +50,26 @@ const OptimizedImage: React.FC<OptimizedImageProps> = ({
   }, [priority]);
 
   return (
-    <img
-      ref={imgRef}
-      src={isInView ? src : undefined}
-      alt={alt}
-      loading={priority ? 'eager' : 'lazy'}
-      decoding="async"
-      onLoad={() => setIsLoaded(true)}
-      className={cn(
-        'transition-opacity duration-300',
-        isLoaded ? 'opacity-100' : 'opacity-0',
-        className
-      )}
-      {...props}
-    />
+    <picture>
+      <source type="image/avif" srcSet={isInView ? avifSrc : undefined} />
+      <source type="image/webp" srcSet={isInView ? webpSrc : undefined} />
+      <img
+        ref={imgRef}
+        src={isInView ? src : undefined}
+        srcSet={isInView ? srcSet : undefined}
+        sizes={sizes}
+        alt={alt}
+        loading={priority ? 'eager' : 'lazy'}
+        decoding="async"
+        onLoad={() => setIsLoaded(true)}
+        className={cn(
+          'transition-opacity duration-300',
+          isLoaded ? 'opacity-100' : 'opacity-0',
+          className
+        )}
+        {...restProps}
+      />
+    </picture>
   );
 };
 

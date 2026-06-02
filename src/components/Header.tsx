@@ -5,6 +5,7 @@ import { Menu, X, Globe } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useState } from 'react';
 import karkenLogo from '@/assets/karken-logo.jpg';
+import OptimizedImage from '@/components/OptimizedImage';
 
 const Header: React.FC = () => {
   const { t, language, setLanguage } = useLanguage();
@@ -31,7 +32,7 @@ const Header: React.FC = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center">
-            <img src={karkenLogo} alt="Karken Company" className="h-12 w-auto" />
+            <OptimizedImage src={karkenLogo} alt="Karken Company" className="h-12 w-auto" priority />
           </Link>
 
           {/* Desktop Navigation */}
